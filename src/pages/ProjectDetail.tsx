@@ -5,6 +5,7 @@ import ThemeToggle from '../components/ui/ThemeToggle'
 import LanguageSwitch from '../components/ui/LanguageSwitch'
 import TechChip from '../components/ui/TechChip'
 import { projects } from '../data/projects'
+import { withBase } from '../utils/base'
 import { pickLocalized } from '../utils/localized'
 
 const STORE_LABELS: Record<string, string> = {
@@ -38,7 +39,7 @@ export default function ProjectDetail() {
 
       <main className="mx-auto max-w-3xl px-6 py-16">
         <div className="flex items-center gap-4">
-          <img src={project.logoUrl} alt="" className="h-14 w-14 rounded-xl" />
+          <img src={withBase(project.logoUrl)} alt="" className="h-14 w-14 rounded-xl" />
           <h1 className="text-3xl font-bold tracking-tight">{project.title}</h1>
         </div>
 
@@ -101,7 +102,13 @@ export default function ProjectDetail() {
             </h2>
             <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
               {project.screenshots.map((src) => (
-                <img key={src} src={src} alt="" loading="lazy" className="w-full rounded-xl border border-slate-200 dark:border-slate-800" />
+                <img
+                  key={src}
+                  src={withBase(src)}
+                  alt=""
+                  loading="lazy"
+                  className="w-full rounded-xl border border-slate-200 dark:border-slate-800"
+                />
               ))}
             </div>
           </div>

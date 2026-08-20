@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { profile } from '../../data/profile'
+import { withBase } from '../../utils/base'
 import { pickLocalized } from '../../utils/localized'
 
 export default function Hero() {
@@ -19,7 +20,7 @@ export default function Hero() {
       </div>
 
       <img
-        src={profile.photoUrl}
+        src={withBase(profile.photoUrl)}
         alt={`${profile.firstName} ${profile.lastName}`}
         className="h-32 w-32 shrink-0 rounded-full object-cover shadow-lg ring-4 ring-white sm:h-40 sm:w-40 md:h-48 md:w-48 dark:ring-slate-900"
       />

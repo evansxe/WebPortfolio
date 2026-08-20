@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { profile } from '../../data/profile'
+import { withBase } from '../../utils/base'
 import RevealOnScroll from '../ui/RevealOnScroll'
 import SectionHeading from '../ui/SectionHeading'
 
@@ -8,7 +9,7 @@ const GITHUB_URL = 'https://github.com/evansxe'
 
 export default function Contact() {
   const { t, i18n } = useTranslation()
-  const cvHref = i18n.language.startsWith('es') ? '/cv-es.pdf' : '/cv-en.pdf'
+  const cvHref = withBase(i18n.language.startsWith('es') ? '/cv-es.pdf' : '/cv-en.pdf')
 
   return (
     <section id="contact" className="section-container text-center">

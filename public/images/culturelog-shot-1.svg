@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720">
+  <rect width="360" height="720" rx="24" fill="#0f172a"/>
+  <rect x="16" y="48" width="328" height="80" rx="16" fill="#C084FC" fill-opacity="0.25"/>
+  <rect x="16" y="148" width="328" height="160" rx="16" fill="#C084FC" fill-opacity="0.18"/>
+  <rect x="16" y="328" width="328" height="160" rx="16" fill="#C084FC" fill-opacity="0.18"/>
+  <rect x="16" y="508" width="328" height="160" rx="16" fill="#C084FC" fill-opacity="0.18"/>
+  <circle cx="56" cy="88" r="18" fill="#9333EA"/>
+  <text x="180" y="700" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Screenshot placeholder — CL 1</text>
+</svg>

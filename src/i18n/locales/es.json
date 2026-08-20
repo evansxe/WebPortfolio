@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "backHome": "Volver al inicio"
+  },
+  "about": {
+    "heading": "Sobre mi",
+    "focusArea": "Area de enfoque",
+    "yearsExperience": "Anos de experiencia",
+    "problemsIEnjoy": "Problemas que disfruto resolver"
+  },
+  "projects": {
+    "heading": "Proyectos personales",
+    "viewDetails": "Ver detalles",
+    "achievements": "Logros",
+    "techUsed": "Tecnologias usadas",
+    "availableOn": "Disponible en",
+    "screenshots": "Capturas de pantalla",
+    "backToProjects": "Volver a proyectos"
+  },
+  "skills": {
+    "heading": "Habilidades",
+    "languages": "Lenguajes",
+    "tools": "Herramientas",
+    "ai": "IA y Automatizacion",
+    "methodologies": "Metodologias"
+  },
+  "experience": {
+    "heading": "Experiencia",
+    "education": "Educacion",
+    "languages": "Idiomas"
+  },
+  "contact": {
+    "heading": "Hablemos",
+    "subheading": "Abierto a nuevas oportunidades y proyectos interesantes.",
+    "email": "Correo",
+    "downloadCv": "Descargar CV"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "notFound": {
+    "heading": "Pagina no encontrada",
+    "body": "La pagina que buscas no existe.",
+    "backHome": "Volver al inicio"
+  },
+  "theme": {
+    "toggle": "Cambiar tema"
+  }
+}

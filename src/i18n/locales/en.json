@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "backHome": "Back home"
+  },
+  "about": {
+    "heading": "About me",
+    "focusArea": "Focus area",
+    "yearsExperience": "Years of experience",
+    "problemsIEnjoy": "Problems I enjoy solving"
+  },
+  "projects": {
+    "heading": "Personal projects",
+    "viewDetails": "View details",
+    "achievements": "Achievements",
+    "techUsed": "Tech used",
+    "availableOn": "Available on",
+    "screenshots": "Screenshots",
+    "backToProjects": "Back to projects"
+  },
+  "skills": {
+    "heading": "Skills",
+    "languages": "Languages",
+    "tools": "Tools",
+    "ai": "AI & Automation",
+    "methodologies": "Methodologies"
+  },
+  "experience": {
+    "heading": "Experience",
+    "education": "Education",
+    "languages": "Languages"
+  },
+  "contact": {
+    "heading": "Get in touch",
+    "subheading": "Open to new opportunities and interesting projects.",
+    "email": "Email",
+    "downloadCv": "Download CV"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "heading": "Page not found",
+    "body": "The page you're looking for doesn't exist.",
+    "backHome": "Back to home"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  }
+}

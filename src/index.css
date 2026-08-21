@@ -70,7 +70,7 @@ h6 {
 }
 
 .section-container {
-  @apply mx-auto w-full max-w-5xl px-6 py-16 scroll-mt-20 sm:py-24;
+  @apply mx-auto w-full max-w-5xl px-6 py-10 scroll-mt-20 sm:py-16;
 }
 
 @media print {

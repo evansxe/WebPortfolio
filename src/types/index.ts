@@ -52,6 +52,9 @@ export interface ExperienceEntry {
   company: string
   period: string
   color: string
+  logoUrl?: string
+  /** Set when the logo image already fills its own background (no padding/white tile needed). */
+  logoFilled?: boolean
   position: LocalizedText
   description: LocalizedText
   tech: string[]

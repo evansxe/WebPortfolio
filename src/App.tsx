@@ -6,6 +6,7 @@ import { ThemeContext, useThemeState } from './hooks/useTheme'
 import Home from './pages/Home'
 
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'))
+const Cv = lazy(() => import('./pages/Cv'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="/cv" element={<Cv />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

@@ -43,6 +43,12 @@
   "footer": {
     "rights": "Todos los derechos reservados."
   },
+  "cv": {
+    "summary": "Resumen Profesional",
+    "print": "Imprimir / Guardar como PDF",
+    "backToPortfolio": "← Volver al portfolio",
+    "fullPortfolio": "Portfolio completo, proyectos y mas en"
+  },
   "notFound": {
     "heading": "Pagina no encontrada",
     "body": "La pagina que buscas no existe.",

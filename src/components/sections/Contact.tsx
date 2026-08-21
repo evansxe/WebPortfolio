@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import { profile } from '../../data/profile'
-import { withBase } from '../../utils/base'
 import RevealOnScroll from '../ui/RevealOnScroll'
 import SectionHeading from '../ui/SectionHeading'
 
@@ -8,16 +8,15 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/ivan-mart%C3%ADnez-company-03a
 const GITHUB_URL = 'https://github.com/evansxe'
 
 export default function Contact() {
-  const { t, i18n } = useTranslation()
-  const cvHref = withBase(i18n.language.startsWith('es') ? '/cv-es.pdf' : '/cv-en.pdf')
+  const { t } = useTranslation()
 
   return (
-    <section id="contact" className="section-container text-center">
+    <section id="contact" className="section-container">
       <RevealOnScroll>
         <SectionHeading number="05">{t('contact.heading')}</SectionHeading>
         <p className="mt-3 text-slate-600 dark:text-slate-400">{t('contact.subheading')}</p>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
             href={`mailto:${profile.email}`}
             className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium transition-colors hover:bg-slate-100 dark:border-slate-800 dark:hover:bg-slate-800"
@@ -40,13 +39,12 @@ export default function Contact() {
           >
             GitHub
           </a>
-          <a
-            href={cvHref}
-            download
+          <Link
+            to="/cv"
             className="no-print rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-dark"
           >
             {t('contact.downloadCv')}
-          </a>
+          </Link>
         </div>
       </RevealOnScroll>
     </section>

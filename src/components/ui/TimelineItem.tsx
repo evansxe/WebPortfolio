@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import type { ExperienceEntry } from '../../types'
+import { withBase } from '../../utils/base'
 import { getInitials } from '../../utils/initials'
 import { pickLocalized } from '../../utils/localized'
 import TechChip from './TechChip'
@@ -14,21 +15,35 @@ export default function TimelineItem({ entry, isLast = false }: TimelineItemProp
 
   return (
     <div className="relative pb-10 pl-16 last:pb-0">
-      <span
-        className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-xl text-xs font-bold text-white shadow-sm"
-        style={{ backgroundColor: entry.color }}
-        aria-hidden="true"
-      >
-        {getInitials(entry.company)}
-      </span>
+      {entry.logoUrl ? (
+        <span
+          className={
+            entry.logoFilled
+              ? 'absolute left-0 top-0 flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700'
+              : 'absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-xl bg-white p-1.5 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700'
+          }
+          aria-hidden="true"
+        >
+          <img
+            src={withBase(entry.logoUrl)}
+            alt=""
+            className={entry.logoFilled ? 'h-full w-full object-cover' : 'h-full w-full object-contain'}
+          />
+        </span>
+      ) : (
+        <span
+          className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-xl text-xs font-bold text-white shadow-sm"
+          style={{ backgroundColor: entry.color }}
+          aria-hidden="true"
+        >
+          {getInitials(entry.company)}
+        </span>
+      )}
 
       {!isLast && (
         <span
-          className="absolute left-5 top-10 w-px"
-          style={{
-            height: 'calc(100% - 2.5rem)',
-            background: `linear-gradient(to bottom, ${entry.color}, transparent)`,
-          }}
+          className="absolute left-5 top-10 w-px bg-slate-200 dark:bg-slate-800"
+          style={{ height: 'calc(100% - 2.5rem)' }}
         />
       )}
 

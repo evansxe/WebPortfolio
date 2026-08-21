@@ -43,6 +43,12 @@
   "footer": {
     "rights": "All rights reserved."
   },
+  "cv": {
+    "summary": "Professional Summary",
+    "print": "Print / Save as PDF",
+    "backToPortfolio": "← Back to portfolio",
+    "fullPortfolio": "Full portfolio, projects, and more at"
+  },
   "notFound": {
     "heading": "Page not found",
     "body": "The page you're looking for doesn't exist.",

@@ -19,6 +19,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Teamwire',
     period: 'Jul 2020 — May 2026',
     color: '#0891B2',
+    logoUrl: '/images/teamwire-logo.svg',
     position: {
       en: 'Android Developer',
       es: 'Desarrollador Android',
@@ -33,6 +34,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Diusframi',
     period: 'Nov 2018 — Jul 2020',
     color: '#DB2777',
+    logoUrl: '/images/diusframi-logo.jpg',
     position: {
       en: 'Mobile App Developer',
       es: 'Desarrollador de Aplicaciones Móviles',
@@ -47,6 +49,8 @@ export const experience: ExperienceEntry[] = [
     company: 'Nubeser Soluciones',
     period: 'May 2018 — Oct 2018',
     color: '#D97706',
+    logoUrl: '/images/nubeser-logo.png',
+    logoFilled: true,
     position: {
       en: 'Software Analyst & Developer',
       es: 'Analista Desarrollador de Software',
@@ -61,6 +65,7 @@ export const experience: ExperienceEntry[] = [
     company: 'TAG Ingenieros',
     period: 'Dec 2017 — Feb 2018',
     color: '#059669',
+    logoUrl: '/images/tag-logo.png',
     position: {
       en: 'Software Developer',
       es: 'Desarrollador de Software',
@@ -75,6 +80,7 @@ export const experience: ExperienceEntry[] = [
     company: 'MedicalEGuides',
     period: 'May 2016 — Jun 2017',
     color: '#7C3AED',
+    logoUrl: '/images/meg-logo.webp',
     position: {
       en: 'Software Developer',
       es: 'Desarrollador de Software',
@@ -117,6 +123,6 @@ export const languages: LanguageEntry[] = [
   },
   {
     name: { en: 'English', es: 'Inglés' },
-    level: { en: 'C1', es: 'C1' },
+    level: { en: 'C2', es: 'C2' },
   },
 ]

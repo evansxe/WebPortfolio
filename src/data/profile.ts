@@ -14,8 +14,8 @@ export const profile: Profile = {
     es: 'Desarrollador de Aplicaciones Móviles',
   },
   quote: {
-    en: 'I turn complicated problems into interfaces people enjoy using.',
-    es: 'Convierto problemas complicados en interfaces que la gente disfruta usar.',
+    en: 'I like building software that solves real, everyday problems for people.',
+    es: 'Me gusta construir software que resuelve problemas reales y cotidianos para la gente.',
   },
   photoUrl: '/images/avatar-photo.png',
   focusArea: {
@@ -24,11 +24,11 @@ export const profile: Profile = {
   },
   yearsExperience: 10,
   extendedBio: {
-    en: 'I am a mobile developer with ten years of experience building native Android and iOS apps, from independent side projects to production apps for companies in Spain and abroad — including two years building the Android client for Teamwire, a team communication app, remotely for a company based in Munich. I have also worked on backend and web pieces along the way (Django, PHP) when a project needed them. These days I am back to building my own apps independently under Devan Soft.',
-    es: 'Soy desarrollador mobile con diez años de experiencia construyendo apps nativas de Android e iOS, desde proyectos propios hasta apps en produccion para empresas en España y en el extranjero — incluyendo dos años construyendo el cliente Android de Teamwire, una app de comunicacion para equipos, en remoto para una empresa con sede en Múnich. Tambien he trabajado en piezas de backend y web (Django, PHP) cuando un proyecto lo ha necesitado. Actualmente estoy de vuelta construyendo mis propias apps de forma independiente bajo Devan Soft.',
+    en: "I've spent the last ten years as a mobile developer, moving between independent projects and production apps for companies in Spain and abroad. I started out in 2016 building native Android apps and Cordova cross-platform apps for MedicalEGuides in Dublin, then spent time at TAG Ingenieros and Nubeser Soluciones picking up ERP/RFID software and backend work along the way. From late 2018 I worked at Diusframi building native apps for both Android (Java) and iOS (Swift), handling everything from new features to QA. The biggest chapter was almost six years, from 2020 to 2026, as the remote Android developer for Teamwire, a secure team-communication app based in Munich — working in Kotlin and Java with Jetpack Compose, Hilt, and Room on a codebase used by real teams every day. Throughout all of it, I kept building my own apps on the side under Devan Soft; today that's my main focus — Football Coach App has passed 100,000 installs on Google Play, CultureLog is also live, and my newer side projects, Tribo and DigiDex, push into Kotlin Multiplatform, Compose Multiplatform, and Clean Architecture with real test coverage.",
+    es: 'Llevo diez años como desarrollador mobile, alternando entre proyectos propios y apps en producción para empresas en España y en el extranjero. Empecé en 2016 construyendo apps nativas de Android y apps multiplataforma con Cordova para MedicalEGuides en Dublín, y después pasé por TAG Ingenieros y Nubeser Soluciones, donde toqué software ERP/RFID y trabajo de backend. Desde finales de 2018 trabajé en Diusframi construyendo apps nativas tanto para Android (Java) como para iOS (Swift), encargándome de todo, desde nuevas funcionalidades hasta QA. El capítulo más largo fueron casi seis años, de 2020 a 2026, como desarrollador Android en remoto para Teamwire, una app de comunicación segura para equipos con sede en Múnich — trabajando en Kotlin y Java con Jetpack Compose, Hilt y Room en un codebase usado a diario por equipos reales. Durante todo ese tiempo seguí construyendo mis propias apps en paralelo bajo Devan Soft; hoy es mi ocupación principal — Football Coach App ha superado las 100.000 instalaciones en Google Play, CultureLog también está publicada, y mis proyectos personales más recientes, Tribo y DigiDex, avanzan hacia Kotlin Multiplatform, Compose Multiplatform y Clean Architecture con cobertura de tests real.',
   },
   problemsIEnjoy: {
-    en: 'Getting native mobile UI to feel fast and effortless, working around platform quirks, and shipping an app end to end on my own as an independent developer.',
-    es: 'Conseguir que la interfaz mobile nativa se sienta rapida y sin esfuerzo, lidiar con las particularidades de cada plataforma, y lanzar una app de principio a fin por mi cuenta como desarrollador independiente.',
+    en: 'Getting native mobile UI to feel fast and effortless, working around platform quirks, and shipping a project end to end on my own — app, backend, and everything in between — as an independent developer.',
+    es: 'Conseguir que la interfaz mobile nativa se sienta rápida y sin esfuerzo, lidiar con las particularidades de cada plataforma, y lanzar un proyecto de principio a fin por mi cuenta — app, backend y todo lo demás — como desarrollador independiente.',
   },
 }

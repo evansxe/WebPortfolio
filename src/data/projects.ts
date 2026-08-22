@@ -7,16 +7,29 @@ export const projects: Project[] = [
     logoUrl: '/images/football-coach-app-logo.svg',
     color: '#16A34A',
     shortDescription: {
-      en: 'A tool for football coaches to plan training sessions, manage squads, and organize matchday lineups.',
-      es: 'Una herramienta para entrenadores de futbol para planificar entrenamientos, gestionar plantillas y organizar alineaciones.',
+      en: 'A native Android tool for football coaches to manage squads, tactics, and matchday lineups — live on Google Play with over 100,000 installs.',
+      es: 'Una herramienta nativa de Android para que entrenadores de futbol gestionen plantillas, tacticas y alineaciones — en Google Play con mas de 100.000 instalaciones.',
     },
     fullDescription: {
-      en: 'Football Coach App is a native Android app built to help amateur and youth football coaches organize their team. Coaches can build a squad roster, plan training drills, and put together matchday lineups and formations, all from their phone.',
-      es: 'Football Coach App es una app nativa de Android construida para ayudar a entrenadores de futbol amateur y de categorias juveniles a organizar su equipo. Los entrenadores pueden crear una plantilla, planificar ejercicios de entrenamiento y montar alineaciones y formaciones para cada partido, todo desde el movil.',
+      en: "Football Coach App is a native Android tool built for amateur and grassroots coaches to run their team from their phone — not a game, a management suite. Coaches build a squad roster with player profiles (photos, positions, and nationality via a bundled country picker), put together matchday lineups and formations by dragging players onto a pitch with Android's native Drag & Drop API, and sketch tactics on a custom freehand whiteboard with shapes, an undo history, and adjustable brush and color. A training planner handles custom exercises, and a match calendar tracks results and season stats with MPAndroidChart. Underneath, a self-managed greenDao (SQLite) data layer spans a dozen entities — squads, players, matches, training, federations — backed by Firebase for data export/import, Google Sign-In, boot-triggered match-reminder notifications, and Google Play Billing for an ad-removal upgrade. It grew over several years from a simple squad-roster tool into this full feature set, and has passed 100,000 installs on Google Play with a 4.3-star rating across roughly 1,700 reviews.",
+      es: 'Football Coach App es una herramienta nativa de Android construida para que entrenadores de futbol amateur y de categorias juveniles gestionen su equipo desde el movil — no es un juego, es una herramienta de gestion. Los entrenadores crean una plantilla con perfiles de jugadores (fotos, posiciones y nacionalidad mediante un selector de paises integrado), montan alineaciones y formaciones arrastrando jugadores sobre el campo con la API nativa de Drag & Drop de Android, y dibujan tacticas en una pizarra tactil propia con formas, historial de deshacer y pincel y color ajustables. Un planificador de entrenamientos permite crear ejercicios personalizados, y un calendario de partidos registra resultados y estadisticas de temporada con MPAndroidChart. Por dentro, una capa de datos propia con greenDao (SQLite) organiza una docena de entidades — plantillas, jugadores, partidos, entrenamientos, federaciones — apoyada en Firebase para exportar/importar datos, inicio de sesion con Google, notificaciones de recordatorio de partido activadas al arrancar el dispositivo, y Google Play Billing para una mejora de eliminacion de anuncios. Crecio durante varios años desde una simple herramienta de plantillas hasta este conjunto de funciones completo, y ha superado las 100.000 instalaciones en Google Play con una valoracion de 4,3 estrellas en unas 1.700 resenas.',
     },
-    tech: ['Android', 'Java'],
-    storeLinks: [],
-    achievements: [],
+    tech: ['Android', 'Java', 'greenDao', 'Firebase', 'MPAndroidChart', 'Google Play Billing'],
+    storeLinks: [{ store: 'android', url: 'https://play.google.com/store/apps/details?id=devan.footballcoach' }],
+    achievements: [
+      {
+        en: 'Live on Google Play with 100,000+ installs, a 4.3-star rating, and roughly 1,700 reviews — grew over several years from a simple squad-roster tool into a full team-management suite.',
+        es: 'En Google Play con mas de 100.000 instalaciones, una valoracion de 4,3 estrellas y unas 1.700 resenas — crecio durante varios años desde una simple herramienta de plantillas hasta una suite completa de gestion de equipos.',
+      },
+      {
+        en: "Built a tactics whiteboard from scratch — a freehand drawing canvas with shapes, undo history, and adjustable brush and color — plus a formation builder using Android's native Drag & Drop API to place players on a pitch grid.",
+        es: 'Construyo una pizarra tactica desde cero — lienzo de dibujo a mano alzada con formas, historial de deshacer y pincel y color ajustables — junto con un creador de alineaciones que usa la API nativa de Drag & Drop de Android para colocar jugadores sobre una cuadricula de campo.',
+      },
+      {
+        en: 'A full team-ops feature set on a self-managed greenDao data layer: squads, players, match calendar and season stats (MPAndroidChart), a custom training-exercise planner, boot-triggered match-reminder notifications, Firebase-backed backup, and Play Billing for ad removal.',
+        es: 'Un conjunto completo de funciones de gestion sobre una capa de datos propia con greenDao: plantillas, jugadores, calendario de partidos y estadisticas de temporada (MPAndroidChart), un planificador de ejercicios de entrenamiento propio, notificaciones de recordatorio de partido activadas al arrancar, copias de seguridad con Firebase, y Play Billing para eliminar anuncios.',
+      },
+    ],
     screenshots: ['/images/football-coach-app-shot-1.svg', '/images/football-coach-app-shot-2.svg'],
   },
   {
@@ -25,16 +38,29 @@ export const projects: Project[] = [
     logoUrl: '/images/culturelog-logo.svg',
     color: '#9333EA',
     shortDescription: {
-      en: "A cross-platform app for logging and rating the books, films, and exhibitions you've experienced.",
-      es: 'Una app multiplataforma para registrar y valorar los libros, peliculas y exposiciones que has vivido.',
+      en: 'A personal media log for movies, TV, books, and games that pulls live metadata from TMDB, Google Books, and IGDB — published on Google Play.',
+      es: 'Un registro personal de peliculas, series, libros y juegos que obtiene metadatos en vivo de TMDB, Google Books e IGDB — publicado en Google Play.',
     },
     fullDescription: {
-      en: 'CultureLog is a personal log for tracking cultural life — books read, films watched, exhibitions visited — with quick entries and ratings so you can look back on what you\'ve experienced over time. Built natively for both Android (Java) and iOS (Swift).',
-      es: 'CultureLog es un registro personal para llevar un seguimiento de tu vida cultural — libros leidos, peliculas vistas, exposiciones visitadas — con entradas rapidas y valoraciones para poder mirar atras y ver lo que has vivido con el tiempo. Construida de forma nativa tanto para Android (Java) como para iOS (Swift).',
+      en: "CultureLog is a personal log for cultural life — movies, TV shows, books, and games you've finished, are working through, or have queued up — with ratings, dates, comments, and cover art so you can look back on what you've experienced over time. Adding an item searches TMDB, Google Books, or the IGDB/Twitch API depending on the category, pulling in cover art and metadata automatically over Retrofit, RxJava, and OkHttp, including OAuth2 client-credentials token handling for IGDB's access tokens. A stats screen surfaces your best- and worst-rated item per category and year, and a no-account cross-device backup zips the local greenDao database, uploads it to Firebase Storage under an anonymous auth session, and hands you a 6-digit code to pull it back down on another phone. The Android app is the shipped product, published on Google Play; an earlier native iOS (Swift, UIKit) build explored the same concept before development consolidated on Android.",
+      es: 'CultureLog es un registro personal de tu vida cultural — peliculas, series, libros y juegos que has terminado, estas siguiendo o tienes pendientes — con valoraciones, fechas, comentarios y caratulas para poder mirar atras y ver lo que has vivido con el tiempo. Al añadir un elemento se busca en TMDB, Google Books o la API de IGDB/Twitch segun la categoria, trayendo caratulas y metadatos automaticamente mediante Retrofit, RxJava y OkHttp, incluyendo el manejo de tokens OAuth2 de tipo client-credentials para IGDB. Una pantalla de estadisticas muestra tu mejor y peor valoracion por categoria y año, y una copia de seguridad entre dispositivos sin necesidad de cuenta comprime la base de datos local en greenDao, la sube a Firebase Storage bajo una sesion anonima, y te da un codigo de 6 digitos para recuperarla en otro telefono. La app de Android es el producto publicado en Google Play; una version nativa anterior para iOS (Swift, UIKit) exploro la misma idea antes de que el desarrollo se centrara en Android.',
     },
-    tech: ['Android', 'Java', 'iOS', 'Swift'],
-    storeLinks: [],
-    achievements: [],
+    tech: ['Android', 'Kotlin', 'Java', 'Retrofit', 'RxJava', 'greenDao', 'Firebase'],
+    storeLinks: [{ store: 'android', url: 'https://play.google.com/store/apps/details?id=com.devan.culturelog' }],
+    achievements: [
+      {
+        en: 'Aggregates three third-party metadata APIs — TMDB, Google Books, and IGDB/Twitch — behind one unified search flow, including OAuth2 client-credentials token refresh for IGDB.',
+        es: 'Combina tres APIs externas de metadatos — TMDB, Google Books e IGDB/Twitch — en un unico flujo de busqueda, incluyendo la renovacion de tokens OAuth2 client-credentials para IGDB.',
+      },
+      {
+        en: 'Built a no-account cross-device backup: zips the local database, uploads it to Firebase Storage under an anonymous auth session, and restores it on another device with a 6-digit transfer code.',
+        es: 'Construyo una copia de seguridad entre dispositivos sin necesidad de cuenta: comprime la base de datos local, la sube a Firebase Storage bajo una sesion anonima, y la restaura en otro dispositivo con un codigo de 6 digitos.',
+      },
+      {
+        en: 'Published on Google Play at a 4.7-star rating, after an earlier native iOS (Swift/UIKit) prototype explored the same idea.',
+        es: 'Publicada en Google Play con una valoracion de 4,7 estrellas, tras un prototipo nativo anterior para iOS (Swift/UIKit) que exploro la misma idea.',
+      },
+    ],
     screenshots: ['/images/culturelog-shot-1.svg', '/images/culturelog-shot-2.svg'],
   },
   {

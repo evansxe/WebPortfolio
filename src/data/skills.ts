@@ -12,25 +12,32 @@ import {
   SiHtml5,
   SiJson,
   SiKotlin,
+  SiKtor,
   SiMysql,
   SiPython,
+  SiReactivex,
   SiSqlite,
   SiSwift,
   SiTypescript,
 } from 'react-icons/si'
 import {
+  TbApi,
   TbBrandKotlin,
   TbBrandOpenai,
   TbBug,
   TbCoffee,
   TbComponents,
+  TbDatabase,
   TbGitMerge,
   TbGitPullRequest,
   TbPlugConnected,
+  TbPuzzle,
   TbRefresh,
   TbRocket,
   TbStack2,
   TbTags,
+  TbTestPipe,
+  TbWaveSine,
 } from 'react-icons/tb'
 import type { SkillItem } from '../types'
 
@@ -134,8 +141,8 @@ export const skills: SkillItem[] = [
     icon: TbBrandKotlin,
     color: '#7F52FF',
     description: {
-      en: 'A technology for sharing business logic between Android and iOS while keeping native UI on each platform.',
-      es: 'Una tecnologia para compartir logica de negocio entre Android e iOS manteniendo la UI nativa en cada plataforma.',
+      en: 'A Kotlin technology for sharing code between Android and iOS — business logic, and with Compose Multiplatform, a single shared UI.',
+      es: 'Una tecnologia de Kotlin para compartir codigo entre Android e iOS — logica de negocio y, mediante Compose Multiplatform, una unica UI compartida.',
     },
   },
   {
@@ -166,6 +173,66 @@ export const skills: SkillItem[] = [
     description: {
       en: "Android's persistence library, providing an abstraction layer over SQLite.",
       es: 'La libreria de persistencia de Android, que ofrece una capa de abstraccion sobre SQLite.',
+    },
+  },
+  {
+    name: 'Retrofit',
+    category: 'tools',
+    icon: TbApi,
+    color: '#48B983',
+    description: {
+      en: 'A type-safe HTTP client for Android and Java/Kotlin that turns REST APIs into simple interface calls.',
+      es: 'Un cliente HTTP con tipado seguro para Android y Java/Kotlin que convierte APIs REST en simples interfaces.',
+    },
+  },
+  {
+    name: 'Ktor',
+    category: 'tools',
+    icon: SiKtor,
+    color: '#087CFA',
+    description: {
+      en: 'A Kotlin framework for asynchronous HTTP clients and servers, used as the network layer in Kotlin Multiplatform apps.',
+      es: 'Un framework de Kotlin para clientes y servidores HTTP asincronos, usado como capa de red en apps Kotlin Multiplatform.',
+    },
+  },
+  {
+    name: 'Koin',
+    category: 'tools',
+    icon: TbPuzzle,
+    color: '#7E57C2',
+    description: {
+      en: 'A lightweight dependency injection framework for Kotlin, with no code generation or reflection.',
+      es: 'Un framework ligero de inyeccion de dependencias para Kotlin, sin generacion de codigo ni reflexion.',
+    },
+  },
+  {
+    name: 'Coroutines & Flow',
+    category: 'tools',
+    icon: TbWaveSine,
+    color: '#7F52FF',
+    description: {
+      en: "Kotlin's tools for asynchronous programming and reactive streams, replacing callbacks with sequential, structured code.",
+      es: 'Las herramientas de Kotlin para programacion asincrona y flujos reactivos, sustituyendo callbacks por codigo secuencial y estructurado.',
+    },
+  },
+  {
+    name: 'RxJava',
+    category: 'tools',
+    icon: SiReactivex,
+    color: '#B7178C',
+    description: {
+      en: 'A reactive programming library for composing asynchronous, event-based operations on Android.',
+      es: 'Una libreria de programacion reactiva para componer operaciones asincronas basadas en eventos en Android.',
+    },
+  },
+  {
+    name: 'greenDao',
+    category: 'tools',
+    icon: TbDatabase,
+    color: '#4CAF50',
+    description: {
+      en: 'A lightweight ORM for Android that maps Java/Kotlin objects to a local SQLite database.',
+      es: 'Un ORM ligero para Android que mapea objetos Java/Kotlin a una base de datos SQLite local.',
     },
   },
   {
@@ -216,6 +283,16 @@ export const skills: SkillItem[] = [
     description: {
       en: "Google's platform for tracking and analyzing website and app traffic.",
       es: 'La plataforma de Google para rastrear y analizar el trafico de sitios web y apps.',
+    },
+  },
+  {
+    name: 'Firebase',
+    category: 'tools',
+    icon: SiFirebase,
+    color: '#FFCA28',
+    description: {
+      en: "Google's backend-as-a-service platform for auth, cloud storage, realtime data, and push notifications.",
+      es: 'La plataforma backend-as-a-service de Google para autenticacion, almacenamiento en la nube, datos en tiempo real y notificaciones push.',
     },
   },
   {
@@ -340,6 +417,16 @@ export const skills: SkillItem[] = [
     description: {
       en: 'Automated pipelines that build, test, and deploy code continuously.',
       es: 'Pipelines automatizados que compilan, prueban y despliegan codigo de forma continua.',
+    },
+  },
+  {
+    name: 'Unit Testing',
+    category: 'methodologies',
+    icon: TbTestPipe,
+    color: '#6366F1',
+    description: {
+      en: 'Writing automated tests for individual units of code — my Kotlin Multiplatform apps carry hundreds of tests built with MockK and Ktor MockEngine.',
+      es: 'Escribir tests automatizados para unidades individuales de codigo — mis apps en Kotlin Multiplatform incluyen cientos de tests construidos con MockK y Ktor MockEngine.',
     },
   },
   {

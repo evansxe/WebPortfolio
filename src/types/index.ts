@@ -21,7 +21,7 @@ export interface Profile {
 }
 
 export type StoreLink = {
-  store: 'android' | 'ios' | 'web'
+  store: 'android' | 'ios' | 'web' | 'github'
   url: string
 }
 

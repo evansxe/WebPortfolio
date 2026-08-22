@@ -12,6 +12,7 @@ const STORE_LABELS: Record<string, string> = {
   android: 'Google Play',
   ios: 'App Store',
   web: 'Web',
+  github: 'GitHub',
 }
 
 export default function ProjectDetail() {

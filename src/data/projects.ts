@@ -59,18 +59,31 @@ export const projects: Project[] = [
     slug: 'digidex',
     title: 'DigiDex',
     logoUrl: '/images/digidex-logo.svg',
-    color: '#F59E0B',
+    color: '#0056B3',
     shortDescription: {
-      en: 'A Digimon reference app in the same spirit as my Pokedex project — browse Digimon with their stats and details.',
-      es: 'Una app de referencia de Digimon en la misma linea que mi proyecto Pokedex — explora Digimon con sus estadisticas y detalles.',
+      en: 'A native Android encyclopedia for Digimon, built with Jetpack Compose and Material 3, with live data, search, and evolution trees.',
+      es: 'Una enciclopedia nativa de Android para Digimon, construida con Jetpack Compose y Material 3, con datos en vivo, busqueda y arboles evolutivos.',
     },
     fullDescription: {
-      en: 'DigiDex is a native Android app that lists Digimon with their stats, types, and evolution details, built as a companion to my Pokedex-style projects using the same Kotlin-based approach.',
-      es: 'DigiDex es una app nativa de Android que lista Digimon con sus estadisticas, tipos y detalles de evolucion, construida como companera de mis proyectos estilo Pokedex usando el mismo enfoque basado en Kotlin.',
+      en: 'DigiDex is a native Android app that lets you browse, search, and dig into the details of over a thousand Digimon. Digimon are organized by evolution level (Baby, Child, Adult, Perfect, Ultimate, and more) in expandable sections, with live search that filters and auto-expands matching categories as you type. Each Digimon has its own detail screen with tabs for general info, stats (attributes, types, fields, skills), and its prior and next evolutions, with direct navigation between related Digimon. Under the hood it follows Clean Architecture (data/domain/UI layers) with MVVM, Hilt for dependency injection, and Kotlin Coroutines and Flow for reactive state, consuming the public Digi-API over Retrofit and Moshi. The whole UI, including the brand mark and adaptive app icon, was designed and built from scratch with a custom Material 3 design system — its own shape and typography scale on top of a Google Fonts identity — with full light and dark theme support and no third-party artwork.',
+      es: 'DigiDex es una app nativa de Android para explorar, buscar y consultar los detalles de mas de mil Digimon. Los Digimon se organizan por nivel evolutivo (Baby, Child, Adult, Perfect, Ultimate y mas) en secciones expandibles, con una busqueda en vivo que filtra y expande automaticamente las categorias con resultados a medida que escribes. Cada Digimon tiene su propia pantalla de detalle con pestanas para informacion general, estadisticas (atributos, tipos, campos, habilidades) y sus evoluciones anteriores y siguientes, con navegacion directa entre Digimon relacionados. Por dentro sigue una Clean Architecture (capas de datos/dominio/UI) con MVVM, Hilt para inyeccion de dependencias, y Coroutines y Flow de Kotlin para el estado reactivo, consumiendo la Digi-API publica mediante Retrofit y Moshi. Toda la interfaz, incluyendo la marca y el icono adaptativo de la app, fue disenada y construida desde cero con un sistema de diseno Material 3 propio — su propia escala de formas y tipografia sobre una identidad de Google Fonts — con soporte completo de tema claro y oscuro y sin usar arte de terceros.',
     },
-    tech: ['Android', 'Kotlin'],
-    storeLinks: [],
-    achievements: [],
-    screenshots: ['/images/digidex-shot-1.svg', '/images/digidex-shot-2.svg'],
+    tech: ['Android', 'Kotlin', 'Jetpack Compose', 'Material 3', 'Hilt', 'Retrofit', 'Coroutines & Flow'],
+    storeLinks: [{ store: 'github', url: 'https://github.com/evansxe/DigiDex' }],
+    achievements: [
+      {
+        en: 'Consumes the public Digi-API in real time to browse and search over 1,000 Digimon across every evolution stage.',
+        es: 'Consume la Digi-API publica en tiempo real para explorar y buscar mas de 1.000 Digimon en todas las etapas evolutivas.',
+      },
+      {
+        en: 'Built a complete custom Material 3 design system from scratch — shape scale, full typography with a Google Fonts identity, and an original hand-drawn brand mark and adaptive icon — with no third-party artwork.',
+        es: 'Construyo un sistema de diseno Material 3 propio desde cero — escala de formas, tipografia completa con identidad de Google Fonts, y una marca e icono adaptativo originales — sin usar arte de terceros.',
+      },
+      {
+        en: 'Clean Architecture with MVVM, Hilt dependency injection, and Kotlin Flow-driven reactive state across the list, search, and detail screens.',
+        es: 'Clean Architecture con MVVM, inyeccion de dependencias con Hilt, y estado reactivo con Kotlin Flow en las pantallas de lista, busqueda y detalle.',
+      },
+    ],
+    screenshots: ['/images/digidex-shot-1.png', '/images/digidex-shot-2.png'],
   },
 ]

@@ -101,14 +101,14 @@ export default function ProjectDetail() {
             <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-500">
               {t('projects.screenshots')}
             </h2>
-            <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <div className="-mx-6 mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2">
               {project.screenshots.map((src) => (
                 <img
                   key={src}
                   src={withBase(src)}
                   alt=""
                   loading="lazy"
-                  className="w-full rounded-xl border border-slate-200 dark:border-slate-800"
+                  className="w-40 flex-none snap-start rounded-xl border border-slate-200 dark:border-slate-800 sm:w-48"
                 />
               ))}
             </div>

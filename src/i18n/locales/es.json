@@ -41,7 +41,8 @@
     "downloadCv": "Descargar CV"
   },
   "footer": {
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Construido con React, TypeScript, Vite y Tailwind CSS."
   },
   "cv": {
     "summary": "Resumen Profesional",

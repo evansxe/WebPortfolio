@@ -41,7 +41,8 @@
     "downloadCv": "Download CV"
   },
   "footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "builtWith": "Built with React, TypeScript, Vite, and Tailwind CSS."
   },
   "cv": {
     "summary": "Professional Summary",

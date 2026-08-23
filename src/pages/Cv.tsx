@@ -5,6 +5,7 @@ import { education, experience, languages } from '../data/experience'
 import { profile } from '../data/profile'
 import { skills } from '../data/skills'
 import type { SkillCategory } from '../types'
+import { withBase } from '../utils/base'
 import { pickLocalized } from '../utils/localized'
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/ivan-mart%C3%ADnez-company-03a4b7113/'
@@ -43,22 +44,29 @@ export default function Cv() {
       </div>
 
       <main className="mx-auto max-w-3xl px-8 py-10 print:px-0 print:py-0">
-        <header className="border-b border-slate-200 pb-6">
-          <h1 className="text-3xl font-bold tracking-tight">
-            {profile.firstName} {profile.lastName}
-          </h1>
-          <p className="mt-1 text-lg text-slate-600">{pickLocalized(profile.title, lang)}</p>
-          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-600">
-            <span>{pickLocalized(profile.location, lang)}</span>
-            <a href={`mailto:${profile.email}`} className="text-accent">
-              {profile.email}
-            </a>
-            <a href={LINKEDIN_URL} className="text-accent">
-              LinkedIn
-            </a>
-            <a href={GITHUB_URL} className="text-accent">
-              GitHub
-            </a>
+        <header className="flex items-start gap-6 border-b border-slate-200 pb-6">
+          <img
+            src={withBase(profile.photoUrl)}
+            alt=""
+            className="h-24 w-24 shrink-0 rounded-full object-cover print:h-20 print:w-20"
+          />
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight">
+              {profile.firstName} {profile.lastName}
+            </h1>
+            <p className="mt-1 text-lg text-slate-600">{pickLocalized(profile.title, lang)}</p>
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-600">
+              <span>{pickLocalized(profile.location, lang)}</span>
+              <a href={`mailto:${profile.email}`} className="text-accent">
+                {profile.email}
+              </a>
+              <a href={LINKEDIN_URL} className="text-accent">
+                LinkedIn
+              </a>
+              <a href={GITHUB_URL} className="text-accent">
+                GitHub
+              </a>
+            </div>
           </div>
         </header>
 

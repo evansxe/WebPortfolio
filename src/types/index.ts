@@ -48,6 +48,13 @@ export interface SkillItem {
   description: LocalizedText
 }
 
+export interface ExperienceProject {
+  name: string
+  tech?: string
+  /** Set when this project also has a full case study in the Projects section. */
+  slug?: string
+}
+
 export interface ExperienceEntry {
   company: string
   period: string
@@ -58,6 +65,7 @@ export interface ExperienceEntry {
   position: LocalizedText
   description: LocalizedText
   tech: string[]
+  projects?: ExperienceProject[]
 }
 
 export interface EducationEntry {

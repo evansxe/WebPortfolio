@@ -137,4 +137,38 @@ export const projects: Project[] = [
     ],
     screenshots: ['/images/digidex-shot-1.png', '/images/digidex-shot-2.png'],
   },
+  {
+    slug: 'portfolio-website',
+    title: 'Portfolio Website',
+    logoUrl: '/favicon.svg',
+    color: '#6366F1',
+    shortDescription: {
+      en: 'This site itself — a bilingual React/TypeScript portfolio with dark mode, scroll animations, and a print-ready CV, deployed on GitHub Pages.',
+      es: 'Este mismo sitio — un portfolio bilingue en React/TypeScript con modo oscuro, animaciones al hacer scroll y un CV listo para imprimir, desplegado en GitHub Pages.',
+    },
+    fullDescription: {
+      en: "The site you're looking at right now. Built with React, TypeScript, and Vite, styled with Tailwind CSS, and fully bilingual (English/Spanish) via react-i18next with automatic language detection and a manual switch. It ships light and dark themes, scroll-triggered reveal animations, a mouse-tracked spotlight effect on project cards, and a dedicated print stylesheet so the CV page renders as a clean PDF straight from the browser. All content — profile, skills, experience, and this very project list — lives in typed TypeScript data files, so adding a project or updating a bio is a data change, not a layout change. It deploys automatically to GitHub Pages via GitHub Actions on every push to master.",
+      es: 'El sitio que estas viendo ahora mismo. Construido con React, TypeScript y Vite, con estilos en Tailwind CSS, y totalmente bilingue (ingles/español) mediante react-i18next, con deteccion automatica del idioma y un selector manual. Incluye temas claro y oscuro, animaciones de aparicion al hacer scroll, un efecto de spotlight que sigue el raton en las tarjetas de proyectos, y una hoja de estilos de impresion dedicada para que la pagina del CV se pueda exportar como PDF limpio directamente desde el navegador. Todo el contenido — perfil, habilidades, experiencia y esta misma lista de proyectos — vive en archivos de datos TypeScript tipados, asi que añadir un proyecto o actualizar una biografia es un cambio de datos, no de maquetacion. Se despliega automaticamente en GitHub Pages mediante GitHub Actions en cada push a master.',
+    },
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'react-i18next', 'GitHub Actions'],
+    storeLinks: [
+      { store: 'web', url: 'https://evansxe.github.io/WebPortfolio/' },
+      { store: 'github', url: 'https://github.com/evansxe/WebPortfolio' },
+    ],
+    achievements: [
+      {
+        en: 'Fully bilingual (English/Spanish) with automatic browser-language detection and a manual switch, covering every section including the printable CV.',
+        es: 'Totalmente bilingue (ingles/español) con deteccion automatica del idioma del navegador y selector manual, cubriendo cada seccion incluido el CV imprimible.',
+      },
+      {
+        en: 'Typed content architecture — profile, skills, experience, and projects are all plain TypeScript data files, so the whole site updates from data changes alone, with no JSX edits needed.',
+        es: 'Arquitectura de contenido tipada — perfil, habilidades, experiencia y proyectos son simples archivos de datos TypeScript, de modo que todo el sitio se actualiza solo con cambios de datos, sin tocar JSX.',
+      },
+      {
+        en: 'Continuous deployment to GitHub Pages via GitHub Actions, building and publishing automatically on every push to master.',
+        es: 'Despliegue continuo a GitHub Pages mediante GitHub Actions, compilando y publicando automaticamente en cada push a master.',
+      },
+    ],
+    screenshots: [],
+  },
 ]

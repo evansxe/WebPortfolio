@@ -38,7 +38,7 @@ export interface Project {
   screenshots: string[]
 }
 
-export type SkillCategory = 'languages' | 'tools' | 'ai' | 'methodologies'
+export type SkillCategory = 'languages' | 'mobile' | 'web' | 'cloud' | 'ai' | 'methodologies'
 
 export interface SkillItem {
   name: string

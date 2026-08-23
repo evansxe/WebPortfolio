@@ -14,7 +14,9 @@ const SITE_URL = 'https://evansxe.github.io/WebPortfolio/'
 
 const SKILL_CATEGORIES: { key: SkillCategory; labelKey: string }[] = [
   { key: 'languages', labelKey: 'skills.languages' },
-  { key: 'tools', labelKey: 'skills.tools' },
+  { key: 'mobile', labelKey: 'skills.mobile' },
+  { key: 'web', labelKey: 'skills.web' },
+  { key: 'cloud', labelKey: 'skills.cloud' },
   { key: 'ai', labelKey: 'skills.ai' },
   { key: 'methodologies', labelKey: 'skills.methodologies' },
 ]

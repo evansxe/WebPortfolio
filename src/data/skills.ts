@@ -11,6 +11,7 @@ import {
   SiGoogleanalytics,
   SiGooglegemini,
   SiHtml5,
+  SiIos,
   SiJson,
   SiKotlin,
   SiKtor,
@@ -129,10 +130,10 @@ export const skills: SkillItem[] = [
     },
   },
 
-  // Tools
+  // Mobile
   {
     name: 'Android',
-    category: 'tools',
+    category: 'mobile',
     icon: SiAndroid,
     color: '#3DDC84',
     description: {
@@ -141,8 +142,18 @@ export const skills: SkillItem[] = [
     },
   },
   {
+    name: 'iOS',
+    category: 'mobile',
+    icon: SiIos,
+    color: '#8E8E93',
+    description: {
+      en: "Apple's mobile operating system for native iPhone and iPad apps.",
+      es: 'El sistema operativo movil de Apple para apps nativas de iPhone y iPad.',
+    },
+  },
+  {
     name: 'Kotlin Multiplatform',
-    category: 'tools',
+    category: 'mobile',
     icon: TbBrandKotlin,
     color: '#7F52FF',
     description: {
@@ -152,7 +163,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Jetpack Compose',
-    category: 'tools',
+    category: 'mobile',
     icon: TbComponents,
     color: '#4285F4',
     description: {
@@ -162,7 +173,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Compose Multiplatform',
-    category: 'tools',
+    category: 'mobile',
     icon: TbComponents,
     color: '#4FC3F7',
     description: {
@@ -172,7 +183,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Material 3',
-    category: 'tools',
+    category: 'mobile',
     icon: SiMaterialdesign,
     color: '#757575',
     description: {
@@ -182,7 +193,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Hilt',
-    category: 'tools',
+    category: 'mobile',
     icon: TbPlugConnected,
     color: '#34A853',
     description: {
@@ -192,7 +203,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Room',
-    category: 'tools',
+    category: 'mobile',
     icon: SiSqlite,
     color: '#4A90D9',
     description: {
@@ -202,7 +213,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Retrofit',
-    category: 'tools',
+    category: 'mobile',
     icon: TbApi,
     color: '#48B983',
     description: {
@@ -212,7 +223,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Ktor',
-    category: 'tools',
+    category: 'mobile',
     icon: SiKtor,
     color: '#087CFA',
     description: {
@@ -222,7 +233,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Koin',
-    category: 'tools',
+    category: 'mobile',
     icon: TbPuzzle,
     color: '#7E57C2',
     description: {
@@ -232,7 +243,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Coroutines & Flow',
-    category: 'tools',
+    category: 'mobile',
     icon: TbWaveSine,
     color: '#7F52FF',
     description: {
@@ -242,7 +253,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'RxJava',
-    category: 'tools',
+    category: 'mobile',
     icon: SiReactivex,
     color: '#B7178C',
     description: {
@@ -252,7 +263,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'greenDao',
-    category: 'tools',
+    category: 'mobile',
     icon: TbDatabase,
     color: '#4CAF50',
     description: {
@@ -260,39 +271,11 @@ export const skills: SkillItem[] = [
       es: 'Un ORM ligero para Android que mapea objetos Java/Kotlin a una base de datos SQLite local.',
     },
   },
-  {
-    name: 'AngularJS',
-    category: 'tools',
-    icon: SiAngular,
-    color: '#DD0031',
-    description: {
-      en: 'A JavaScript framework for building dynamic, single-page web applications.',
-      es: 'Un framework de JavaScript para construir aplicaciones web dinamicas de una sola pagina.',
-    },
-  },
-  {
-    name: 'Django',
-    category: 'tools',
-    icon: SiDjango,
-    color: '#2E7D52',
-    description: {
-      en: 'A high-level Python web framework for building secure, database-backed backends quickly.',
-      es: 'Un framework web de Python de alto nivel para construir backends seguros y con base de datos rapidamente.',
-    },
-  },
-  {
-    name: 'Django REST Framework',
-    category: 'tools',
-    icon: SiDjango,
-    color: '#A30000',
-    description: {
-      en: "A toolkit built on Django for building token-authenticated REST APIs, powering Tribo's backend.",
-      es: 'Un conjunto de herramientas sobre Django para construir APIs REST con autenticacion por token, usado en el backend de Tribo.',
-    },
-  },
+
+  // Web & Backend
   {
     name: 'React',
-    category: 'tools',
+    category: 'web',
     icon: SiReact,
     color: '#61DAFB',
     description: {
@@ -302,7 +285,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Vite',
-    category: 'tools',
+    category: 'web',
     icon: SiVite,
     color: '#646CFF',
     description: {
@@ -312,7 +295,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Tailwind CSS',
-    category: 'tools',
+    category: 'web',
     icon: SiTailwindcss,
     color: '#06B6D4',
     description: {
@@ -321,18 +304,38 @@ export const skills: SkillItem[] = [
     },
   },
   {
-    name: 'GitHub Actions',
-    category: 'tools',
-    icon: SiGithubactions,
-    color: '#2088FF',
+    name: 'AngularJS',
+    category: 'web',
+    icon: SiAngular,
+    color: '#DD0031',
     description: {
-      en: "GitHub's built-in CI/CD platform, used to build and deploy this portfolio automatically on every push.",
-      es: 'La plataforma de CI/CD integrada en GitHub, usada para compilar y desplegar este portfolio automaticamente en cada push.',
+      en: 'A JavaScript framework for building dynamic, single-page web applications.',
+      es: 'Un framework de JavaScript para construir aplicaciones web dinamicas de una sola pagina.',
+    },
+  },
+  {
+    name: 'Django',
+    category: 'web',
+    icon: SiDjango,
+    color: '#2E7D52',
+    description: {
+      en: 'A high-level Python web framework for building secure, database-backed backends quickly.',
+      es: 'Un framework web de Python de alto nivel para construir backends seguros y con base de datos rapidamente.',
+    },
+  },
+  {
+    name: 'Django REST Framework',
+    category: 'web',
+    icon: SiDjango,
+    color: '#A30000',
+    description: {
+      en: "A toolkit built on Django for building token-authenticated REST APIs, powering Tribo's backend.",
+      es: 'Un conjunto de herramientas sobre Django para construir APIs REST con autenticacion por token, usado en el backend de Tribo.',
     },
   },
   {
     name: 'MySQL',
-    category: 'tools',
+    category: 'web',
     icon: SiMysql,
     color: '#4479A1',
     description: {
@@ -342,7 +345,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'SQLite',
-    category: 'tools',
+    category: 'web',
     icon: SiSqlite,
     color: '#3B82C4',
     description: {
@@ -350,19 +353,11 @@ export const skills: SkillItem[] = [
       es: 'Un motor de base de datos relacional ligero e integrado, usado comunmente para almacenamiento local.',
     },
   },
-  {
-    name: 'Google Analytics',
-    category: 'tools',
-    icon: SiGoogleanalytics,
-    color: '#E8710A',
-    description: {
-      en: "Google's platform for tracking and analyzing website and app traffic.",
-      es: 'La plataforma de Google para rastrear y analizar el trafico de sitios web y apps.',
-    },
-  },
+
+  // Cloud & DevOps
   {
     name: 'Firebase',
-    category: 'tools',
+    category: 'cloud',
     icon: SiFirebase,
     color: '#FFCA28',
     description: {
@@ -372,7 +367,7 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Firebase App Distribution',
-    category: 'tools',
+    category: 'cloud',
     icon: SiFirebase,
     color: '#FFA000',
     description: {
@@ -382,12 +377,32 @@ export const skills: SkillItem[] = [
   },
   {
     name: 'Firebase Crashlytics',
-    category: 'tools',
+    category: 'cloud',
     icon: TbBug,
     color: '#FF6F00',
     description: {
       en: 'A Firebase tool for real-time crash reporting and diagnostics.',
       es: 'Una herramienta de Firebase para reportes de crashes y diagnosticos en tiempo real.',
+    },
+  },
+  {
+    name: 'Google Analytics',
+    category: 'cloud',
+    icon: SiGoogleanalytics,
+    color: '#E8710A',
+    description: {
+      en: "Google's platform for tracking and analyzing website and app traffic.",
+      es: 'La plataforma de Google para rastrear y analizar el trafico de sitios web y apps.',
+    },
+  },
+  {
+    name: 'GitHub Actions',
+    category: 'cloud',
+    icon: SiGithubactions,
+    color: '#2088FF',
+    description: {
+      en: "GitHub's built-in CI/CD platform, used to build and deploy this portfolio automatically on every push.",
+      es: 'La plataforma de CI/CD integrada en GitHub, usada para compilar y desplegar este portfolio automaticamente en cada push.',
     },
   },
 

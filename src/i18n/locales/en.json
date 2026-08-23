@@ -25,7 +25,9 @@
   "skills": {
     "heading": "Skills",
     "languages": "Languages",
-    "tools": "Tools",
+    "mobile": "Mobile",
+    "web": "Web & Backend",
+    "cloud": "Cloud & DevOps",
     "ai": "AI & Automation",
     "methodologies": "Methodologies"
   },

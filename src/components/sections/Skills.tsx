@@ -7,7 +7,9 @@ import SkillCard from '../ui/SkillCard'
 
 const CATEGORIES: { key: SkillCategory; labelKey: string }[] = [
   { key: 'languages', labelKey: 'skills.languages' },
-  { key: 'tools', labelKey: 'skills.tools' },
+  { key: 'mobile', labelKey: 'skills.mobile' },
+  { key: 'web', labelKey: 'skills.web' },
+  { key: 'cloud', labelKey: 'skills.cloud' },
   { key: 'ai', labelKey: 'skills.ai' },
   { key: 'methodologies', labelKey: 'skills.methodologies' },
 ]

@@ -1,6 +1,5 @@
-import type { CSSProperties } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useSpotlight } from '../../hooks/useSpotlight'
 import type { SkillItem } from '../../types'
 import { hexToRgba } from '../../utils/color'
 import { pickLocalized } from '../../utils/localized'
@@ -8,40 +7,62 @@ import { pickLocalized } from '../../utils/localized'
 export default function SkillCard({ skill }: { skill: SkillItem }) {
   const { i18n } = useTranslation()
   const Icon = skill.icon
-  const { ref, handleMouseMove } = useSpotlight<HTMLDivElement>()
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    if (!isOpen) return
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
+        setIsOpen(false)
+      }
+    }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsOpen(false)
+    }
+
+    document.addEventListener('pointerdown', handlePointerDown)
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isOpen])
 
   const style = {
     '--skill-color': skill.color,
     '--skill-color-soft': hexToRgba(skill.color, 0.12),
-    '--spotlight-color': hexToRgba(skill.color, 0.15),
   } as CSSProperties
 
   return (
-    <div
+    <button
       ref={ref}
-      onMouseMove={handleMouseMove}
+      type="button"
+      onClick={() => setIsOpen((open) => !open)}
+      aria-expanded={isOpen}
       style={style}
-      className="group relative flex flex-col gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/60 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--skill-color)] hover:shadow-[0_16px_40px_-24px_var(--skill-color)] dark:border-slate-800 dark:bg-slate-900 dark:shadow-none dark:hover:border-[var(--skill-color)] dark:hover:shadow-none"
+      className={`relative inline-flex items-center gap-3 rounded-full border bg-white px-5 py-3 text-base font-medium shadow-sm shadow-slate-200/60 transition-colors duration-200 hover:border-[var(--skill-color)] dark:bg-slate-900 dark:shadow-none ${
+        isOpen ? 'border-[var(--skill-color)]' : 'border-slate-200 dark:border-slate-800'
+      }`}
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background: 'radial-gradient(280px circle at var(--spot-x, 50%) var(--spot-y, 50%), var(--spotlight-color), transparent 70%)',
-        }}
-      />
-
       <span
-        className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100 transition-colors duration-300 group-hover:bg-[var(--skill-color-soft)] dark:bg-slate-800"
-        style={{ color: skill.color }}
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-slate-100 transition-colors duration-200 dark:bg-slate-800"
+        style={{ color: skill.color, backgroundColor: isOpen ? 'var(--skill-color-soft)' : undefined }}
         aria-hidden="true"
       >
-        <Icon size={22} />
+        <Icon size={18} />
       </span>
-      <h4 className="relative text-base font-semibold">{skill.name}</h4>
-      <p className="relative text-sm text-slate-600 dark:text-slate-400">
-        {pickLocalized(skill.description, i18n.language)}
-      </p>
-    </div>
+      <span>{skill.name}</span>
+
+      {isOpen && (
+        <div
+          role="tooltip"
+          className="absolute bottom-full left-1/2 z-10 mb-2 w-64 max-w-[80vw] -translate-x-1/2 rounded-lg border border-slate-200 bg-white p-3 text-left text-sm font-normal leading-relaxed text-slate-600 shadow-lg dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+        >
+          {pickLocalized(skill.description, i18n.language)}
+        </div>
+      )}
+    </button>
   )
 }

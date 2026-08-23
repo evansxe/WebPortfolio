@@ -35,9 +35,9 @@ export default function Skills() {
                   </h3>
                 </RevealOnScroll>
 
-                <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-5 flex flex-wrap gap-4">
                   {items.map((skill, i) => (
-                    <RevealOnScroll key={skill.name} delayMs={i * 60}>
+                    <RevealOnScroll key={skill.name} delayMs={i * 30}>
                       <SkillCard skill={skill} />
                     </RevealOnScroll>
                   ))}

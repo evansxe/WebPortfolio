@@ -6,6 +6,7 @@ import {
   SiCss,
   SiDjango,
   SiFirebase,
+  SiGithubactions,
   SiGithubcopilot,
   SiGoogleanalytics,
   SiGooglegemini,
@@ -13,12 +14,16 @@ import {
   SiJson,
   SiKotlin,
   SiKtor,
+  SiMaterialdesign,
   SiMysql,
   SiPython,
+  SiReact,
   SiReactivex,
   SiSqlite,
   SiSwift,
+  SiTailwindcss,
   SiTypescript,
+  SiVite,
 } from 'react-icons/si'
 import {
   TbApi,
@@ -156,6 +161,26 @@ export const skills: SkillItem[] = [
     },
   },
   {
+    name: 'Compose Multiplatform',
+    category: 'tools',
+    icon: TbComponents,
+    color: '#4FC3F7',
+    description: {
+      en: 'A Kotlin Multiplatform UI toolkit for sharing a single Compose-based interface across Android and iOS.',
+      es: 'Un toolkit de UI para Kotlin Multiplatform que permite compartir una unica interfaz basada en Compose entre Android e iOS.',
+    },
+  },
+  {
+    name: 'Material 3',
+    category: 'tools',
+    icon: SiMaterialdesign,
+    color: '#757575',
+    description: {
+      en: "Google's latest design system, used to build custom UI, shape, and typography from scratch in DigiDex.",
+      es: 'El ultimo sistema de diseno de Google, usado para construir una UI, escala de formas y tipografia propias desde cero en DigiDex.',
+    },
+  },
+  {
     name: 'Hilt',
     category: 'tools',
     icon: TbPlugConnected,
@@ -253,6 +278,56 @@ export const skills: SkillItem[] = [
     description: {
       en: 'A high-level Python web framework for building secure, database-backed backends quickly.',
       es: 'Un framework web de Python de alto nivel para construir backends seguros y con base de datos rapidamente.',
+    },
+  },
+  {
+    name: 'Django REST Framework',
+    category: 'tools',
+    icon: SiDjango,
+    color: '#A30000',
+    description: {
+      en: "A toolkit built on Django for building token-authenticated REST APIs, powering Tribo's backend.",
+      es: 'Un conjunto de herramientas sobre Django para construir APIs REST con autenticacion por token, usado en el backend de Tribo.',
+    },
+  },
+  {
+    name: 'React',
+    category: 'tools',
+    icon: SiReact,
+    color: '#61DAFB',
+    description: {
+      en: 'A JavaScript library for building component-based user interfaces, used to build this portfolio site.',
+      es: 'Una libreria de JavaScript para construir interfaces de usuario basadas en componentes, usada para construir este portfolio.',
+    },
+  },
+  {
+    name: 'Vite',
+    category: 'tools',
+    icon: SiVite,
+    color: '#646CFF',
+    description: {
+      en: 'A fast frontend build tool with instant hot-module reloading for modern web projects.',
+      es: 'Una herramienta de compilacion frontend rapida con recarga instantanea de modulos para proyectos web modernos.',
+    },
+  },
+  {
+    name: 'Tailwind CSS',
+    category: 'tools',
+    icon: SiTailwindcss,
+    color: '#06B6D4',
+    description: {
+      en: 'A utility-first CSS framework for building custom designs directly in markup.',
+      es: 'Un framework CSS utility-first para construir disenos personalizados directamente en el marcado.',
+    },
+  },
+  {
+    name: 'GitHub Actions',
+    category: 'tools',
+    icon: SiGithubactions,
+    color: '#2088FF',
+    description: {
+      en: "GitHub's built-in CI/CD platform, used to build and deploy this portfolio automatically on every push.",
+      es: 'La plataforma de CI/CD integrada en GitHub, usada para compilar y desplegar este portfolio automaticamente en cada push.',
     },
   },
   {

@@ -4,22 +4,22 @@ export const projects: Project[] = [
   {
     slug: 'football-coach-app',
     title: 'Football Coach App',
-    logoUrl: '/images/football-coach-app-logo.svg',
+    logoUrl: '/images/football-coach-app-logo.png',
     color: '#16A34A',
     shortDescription: {
-      en: 'A native Android tool for football coaches to manage squads, tactics, and matchday lineups — live on Google Play with over 100,000 installs.',
-      es: 'Una herramienta nativa de Android para que entrenadores de futbol gestionen plantillas, tacticas y alineaciones — en Google Play con mas de 100.000 instalaciones.',
+      en: 'A native Android tool for football coaches to manage squads, tactics, and matchday lineups — live on Google Play with over 180,000 total users.',
+      es: 'Una herramienta nativa de Android para que entrenadores de futbol gestionen plantillas, tacticas y alineaciones — en Google Play con mas de 180.000 usuarios totales.',
     },
     fullDescription: {
-      en: "Football Coach App is a native Android tool built for amateur and grassroots coaches to run their team from their phone — not a game, a management suite. Coaches build a squad roster with player profiles (photos, positions, and nationality via a bundled country picker), put together matchday lineups and formations by dragging players onto a pitch with Android's native Drag & Drop API, and sketch tactics on a custom freehand whiteboard with shapes, an undo history, and adjustable brush and color. A training planner handles custom exercises, and a match calendar tracks results and season stats with MPAndroidChart. Underneath, a self-managed greenDao (SQLite) data layer spans a dozen entities — squads, players, matches, training, federations — backed by Firebase for data export/import, Google Sign-In, boot-triggered match-reminder notifications, and Google Play Billing for an ad-removal upgrade. It grew over several years from a simple squad-roster tool into this full feature set, and has passed 100,000 installs on Google Play with a 4.3-star rating across roughly 1,700 reviews.",
-      es: 'Football Coach App es una herramienta nativa de Android construida para que entrenadores de futbol amateur y de categorias juveniles gestionen su equipo desde el movil — no es un juego, es una herramienta de gestion. Los entrenadores crean una plantilla con perfiles de jugadores (fotos, posiciones y nacionalidad mediante un selector de paises integrado), montan alineaciones y formaciones arrastrando jugadores sobre el campo con la API nativa de Drag & Drop de Android, y dibujan tacticas en una pizarra tactil propia con formas, historial de deshacer y pincel y color ajustables. Un planificador de entrenamientos permite crear ejercicios personalizados, y un calendario de partidos registra resultados y estadisticas de temporada con MPAndroidChart. Por dentro, una capa de datos propia con greenDao (SQLite) organiza una docena de entidades — plantillas, jugadores, partidos, entrenamientos, federaciones — apoyada en Firebase para exportar/importar datos, inicio de sesion con Google, notificaciones de recordatorio de partido activadas al arrancar el dispositivo, y Google Play Billing para una mejora de eliminacion de anuncios. Crecio durante varios años desde una simple herramienta de plantillas hasta este conjunto de funciones completo, y ha superado las 100.000 instalaciones en Google Play con una valoracion de 4,3 estrellas en unas 1.700 resenas.',
+      en: "Football Coach App is a native Android tool built for amateur and grassroots coaches to run their team from their phone — not a game, a management suite. Coaches build a squad roster with player profiles (photos, positions, and nationality via a bundled country picker), put together matchday lineups and formations by dragging players onto a pitch with Android's native Drag & Drop API, and sketch tactics on a custom freehand whiteboard with shapes, an undo history, and adjustable brush and color. A training planner handles custom exercises, and a match calendar tracks results and season stats with MPAndroidChart. Underneath, a self-managed greenDao (SQLite) data layer spans a dozen entities — squads, players, matches, training, federations — backed by Firebase for data export/import, Google Sign-In, boot-triggered match-reminder notifications, and Google Play Billing for an ad-removal upgrade. It grew over several years from a simple squad-roster tool into this full feature set, and has passed 180,000 total users on Google Play with a 4.3-star rating across roughly 1,700 reviews.",
+      es: 'Football Coach App es una herramienta nativa de Android construida para que entrenadores de futbol amateur y de categorias juveniles gestionen su equipo desde el movil — no es un juego, es una herramienta de gestion. Los entrenadores crean una plantilla con perfiles de jugadores (fotos, posiciones y nacionalidad mediante un selector de paises integrado), montan alineaciones y formaciones arrastrando jugadores sobre el campo con la API nativa de Drag & Drop de Android, y dibujan tacticas en una pizarra tactil propia con formas, historial de deshacer y pincel y color ajustables. Un planificador de entrenamientos permite crear ejercicios personalizados, y un calendario de partidos registra resultados y estadisticas de temporada con MPAndroidChart. Por dentro, una capa de datos propia con greenDao (SQLite) organiza una docena de entidades — plantillas, jugadores, partidos, entrenamientos, federaciones — apoyada en Firebase para exportar/importar datos, inicio de sesion con Google, notificaciones de recordatorio de partido activadas al arrancar el dispositivo, y Google Play Billing para una mejora de eliminacion de anuncios. Crecio durante varios años desde una simple herramienta de plantillas hasta este conjunto de funciones completo, y ha superado los 180.000 usuarios totales en Google Play con una valoracion de 4,3 estrellas en unas 1.700 resenas.',
     },
     tech: ['Android', 'Java', 'greenDao', 'Firebase', 'MPAndroidChart', 'Google Play Billing'],
     storeLinks: [{ store: 'android', url: 'https://play.google.com/store/apps/details?id=devan.footballcoach' }],
     achievements: [
       {
-        en: 'Live on Google Play with 100,000+ installs, a 4.3-star rating, and roughly 1,700 reviews — grew over several years from a simple squad-roster tool into a full team-management suite.',
-        es: 'En Google Play con mas de 100.000 instalaciones, una valoracion de 4,3 estrellas y unas 1.700 resenas — crecio durante varios años desde una simple herramienta de plantillas hasta una suite completa de gestion de equipos.',
+        en: 'Live on Google Play with 180,000+ total users, a 4.3-star rating, and roughly 1,700 reviews — grew over several years from a simple squad-roster tool into a full team-management suite.',
+        es: 'En Google Play con mas de 180.000 usuarios totales, una valoracion de 4,3 estrellas y unas 1.700 resenas — crecio durante varios años desde una simple herramienta de plantillas hasta una suite completa de gestion de equipos.',
       },
       {
         en: "Built a tactics whiteboard from scratch — a freehand drawing canvas with shapes, undo history, and adjustable brush and color — plus a formation builder using Android's native Drag & Drop API to place players on a pitch grid.",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     slug: 'culturelog',
     title: 'CultureLog',
-    logoUrl: '/images/culturelog-logo.svg',
+    logoUrl: '/images/culturelog-logo.png',
     color: '#9333EA',
     shortDescription: {
       en: 'A personal media log for movies, TV, books, and games that pulls live metadata from TMDB, Google Books, and IGDB — published on Google Play.',

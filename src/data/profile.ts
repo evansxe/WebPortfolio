@@ -17,7 +17,7 @@ export const profile: Profile = {
     en: 'I like building software that solves real, everyday problems for people.',
     es: 'Me gusta construir software que resuelve problemas reales y cotidianos para la gente.',
   },
-  photoUrl: '/images/avatar-photo.png',
+  photoUrl: '/images/avatar-photo.webp',
   focusArea: {
     en: 'Mobile development',
     es: 'Desarrollo mobile',

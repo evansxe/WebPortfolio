@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     slug: 'football-coach-app',
     title: 'Football Coach App',
-    logoUrl: '/images/football-coach-app-logo.png',
+    logoUrl: '/images/football-coach-app-logo.webp',
     color: '#16A34A',
     shortDescription: {
       en: 'A native Android tool for football coaches to manage squads, tactics, and matchday lineups — live on Google Play with over 180,000 total users.',
@@ -30,12 +30,12 @@ export const projects: Project[] = [
         es: 'Un conjunto completo de funciones de gestion sobre una capa de datos propia con greenDao: plantillas, jugadores, calendario de partidos y estadisticas de temporada (MPAndroidChart), un planificador de ejercicios de entrenamiento propio, notificaciones de recordatorio de partido activadas al arrancar, copias de seguridad con Firebase, y Play Billing para eliminar anuncios.',
       },
     ],
-    screenshots: ['/images/football-coach-app-shot-1.svg', '/images/football-coach-app-shot-2.svg'],
+    screenshots: [],
   },
   {
     slug: 'culturelog',
     title: 'CultureLog',
-    logoUrl: '/images/culturelog-logo.png',
+    logoUrl: '/images/culturelog-logo.webp',
     color: '#9333EA',
     shortDescription: {
       en: 'A personal media log for movies, TV, books, and games that pulls live metadata from TMDB, Google Books, and IGDB — published on Google Play.',
@@ -61,12 +61,12 @@ export const projects: Project[] = [
         es: 'Publicada en Google Play con una valoracion de 4,7 estrellas, tras un prototipo nativo anterior para iOS (Swift/UIKit) que exploro la misma idea.',
       },
     ],
-    screenshots: ['/images/culturelog-shot-1.svg', '/images/culturelog-shot-2.svg'],
+    screenshots: [],
   },
   {
     slug: 'tribo',
     title: 'Tribo',
-    logoUrl: '/images/tribo-logo.png',
+    logoUrl: '/images/tribo-logo.webp',
     color: '#2E8FA8',
     shortDescription: {
       en: 'A social sports app for finding people to play and train with nearby, with a Kotlin Multiplatform frontend and a Django REST backend, both shipped to production.',
@@ -96,14 +96,14 @@ export const projects: Project[] = [
       },
     ],
     screenshots: [
-      '/images/tribo-shot-1.png',
-      '/images/tribo-shot-2.png',
-      '/images/tribo-shot-3.png',
-      '/images/tribo-shot-4.png',
-      '/images/tribo-shot-5.png',
-      '/images/tribo-shot-6.png',
-      '/images/tribo-shot-7.png',
-      '/images/tribo-shot-8.png',
+      '/images/tribo-shot-1.webp',
+      '/images/tribo-shot-2.webp',
+      '/images/tribo-shot-3.webp',
+      '/images/tribo-shot-4.webp',
+      '/images/tribo-shot-5.webp',
+      '/images/tribo-shot-6.webp',
+      '/images/tribo-shot-7.webp',
+      '/images/tribo-shot-8.webp',
     ],
   },
   {
@@ -135,7 +135,7 @@ export const projects: Project[] = [
         es: 'Clean Architecture con MVVM, inyeccion de dependencias con Hilt, y estado reactivo con Kotlin Flow en las pantallas de lista, busqueda y detalle.',
       },
     ],
-    screenshots: ['/images/digidex-shot-1.png', '/images/digidex-shot-2.png'],
+    screenshots: ['/images/digidex-shot-1.webp', '/images/digidex-shot-2.webp'],
   },
   {
     slug: 'portfolio-website',

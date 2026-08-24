@@ -42,7 +42,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Diusframi',
     period: 'Nov 2018 — Jul 2020',
     color: '#DB2777',
-    logoUrl: '/images/diusframi-logo.jpg',
+    logoUrl: '/images/diusframi-logo.webp',
     position: {
       en: 'Mobile App Developer',
       es: 'Desarrollador de Aplicaciones Móviles',
@@ -63,7 +63,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Nubeser Soluciones',
     period: 'May 2018 — Oct 2018',
     color: '#D97706',
-    logoUrl: '/images/nubeser-logo.png',
+    logoUrl: '/images/nubeser-logo.webp',
     logoFilled: true,
     position: {
       en: 'Software Analyst & Developer',
@@ -87,7 +87,7 @@ export const experience: ExperienceEntry[] = [
     company: 'TAG Ingenieros',
     period: 'Dec 2017 — Feb 2018',
     color: '#059669',
-    logoUrl: '/images/tag-logo.png',
+    logoUrl: '/images/tag-logo.webp',
     position: {
       en: 'Software Developer',
       es: 'Desarrollador de Software',

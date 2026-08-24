@@ -5,6 +5,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Devan Studio (Independent)',
     period: '2016 — Present',
     color: '#6366F1',
+    logoUrl: '/images/devan-studio-logo.svg',
     position: {
       en: 'Full Stack Developer',
       es: 'Desarrollador Full Stack',

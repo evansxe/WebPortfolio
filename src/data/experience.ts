@@ -2,10 +2,10 @@ import type { EducationEntry, ExperienceEntry, LanguageEntry } from '../types'
 
 export const experience: ExperienceEntry[] = [
   {
-    company: 'Devan Studio (Independent)',
+    company: 'Devan Forge (Independent)',
     period: '2016 — Present',
     color: '#6366F1',
-    logoUrl: '/images/devan-studio-logo.svg',
+    logoUrl: '/images/devan-forge-logo.webp',
     position: {
       en: 'Full Stack Developer',
       es: 'Desarrollador Full Stack',

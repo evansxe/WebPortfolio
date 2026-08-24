@@ -2,7 +2,7 @@ import type { EducationEntry, ExperienceEntry, LanguageEntry } from '../types'
 
 export const experience: ExperienceEntry[] = [
   {
-    company: 'Devan Soft (Independent)',
+    company: 'Devan Studio (Independent)',
     period: '2016 — Present',
     color: '#6366F1',
     position: {

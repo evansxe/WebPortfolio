@@ -10,7 +10,7 @@ import { pickLocalized } from '../utils/localized'
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/ivan-mart%C3%ADnez-company-03a4b7113/'
 const GITHUB_URL = 'https://github.com/evansxe'
-const SITE_URL = 'https://evansxe.github.io/WebPortfolio/'
+const SITE_URL = 'https://portfolio.devanforge.com/'
 
 const SKILL_CATEGORIES: { key: SkillCategory; labelKey: string }[] = [
   { key: 'languages', labelKey: 'skills.languages' },

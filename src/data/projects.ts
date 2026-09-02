@@ -152,7 +152,7 @@ export const projects: Project[] = [
     },
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'react-i18next', 'GitHub Actions'],
     storeLinks: [
-      { store: 'web', url: 'https://evansxe.github.io/WebPortfolio/' },
+      { store: 'web', url: 'https://portfolio.devanforge.com/' },
       { store: 'github', url: 'https://github.com/evansxe/WebPortfolio' },
     ],
     achievements: [

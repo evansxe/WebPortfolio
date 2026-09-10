@@ -149,7 +149,7 @@ export const languages: LanguageEntry[] = [
     level: { en: 'Native', es: 'Nativo' },
   },
   {
-    name: { en: 'Catalan / Valencian', es: 'Catalán / Valenciano' },
+    name: { en: 'Valencian / Catalan', es: 'Valenciano / Catalán' },
     level: { en: 'Native', es: 'Nativo' },
   },
   {

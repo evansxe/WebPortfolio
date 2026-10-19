@@ -20,6 +20,7 @@ import {
   SiPython,
   SiReact,
   SiReactivex,
+  SiRevenuecat,
   SiSqlite,
   SiSwift,
   SiTailwindcss,
@@ -239,6 +240,16 @@ export const skills: SkillItem[] = [
     description: {
       en: 'A lightweight dependency injection framework for Kotlin, with no code generation or reflection.',
       es: 'Un framework ligero de inyeccion de dependencias para Kotlin, sin generacion de codigo ni reflexion.',
+    },
+  },
+  {
+    name: 'RevenueCat',
+    category: 'mobile',
+    icon: SiRevenuecat,
+    color: '#F2545B',
+    description: {
+      en: 'A subscription-management SDK and dashboard over App Store/Google Play billing — implemented a freemium Pro tier with it: client-side paywalls and a 7-day trial, plus a webhook-driven backend that applies purchase/renewal/refund events to a per-user entitlement, handling out-of-order delivery and grace periods.',
+      es: 'Un SDK y panel de gestion de suscripciones sobre la facturacion de App Store/Google Play — lo use para implementar un nivel Pro freemium: paywalls en el cliente y una prueba gratuita de 7 dias, mas un backend dirigido por webhooks que aplica eventos de compra/renovacion/reembolso a una entitlement por usuario, gestionando entregas desordenadas y periodos de gracia.',
     },
   },
   {

@@ -329,8 +329,8 @@ export const skills: SkillItem[] = [
     icon: SiDjango,
     color: '#A30000',
     description: {
-      en: "A toolkit built on Django for building token-authenticated REST APIs, powering Tribo's backend.",
-      es: 'Un conjunto de herramientas sobre Django para construir APIs REST con autenticacion por token, usado en el backend de Tribo.',
+      en: "A toolkit built on Django for building authenticated REST APIs, powering TriboFit's and Football Coach App's backends.",
+      es: 'Un conjunto de herramientas sobre Django para construir APIs REST con autenticacion, usado en los backends de TriboFit y Football Coach App.',
     },
   },
   {

@@ -16,9 +16,9 @@ export const experience: ExperienceEntry[] = [
     },
     tech: ['Kotlin', 'Java', 'Swift', 'Kotlin Multiplatform', 'Jetpack Compose', 'Python', 'Django'],
     projects: [
-      { name: 'Football Coach App', tech: 'Android (Java)', slug: 'football-coach-app' },
+      { name: 'Football Coach App', tech: 'Kotlin Multiplatform & Django REST Framework', slug: 'football-coach-app' },
       { name: 'CultureLog', tech: 'Android (Java) & iOS (Swift)', slug: 'culturelog' },
-      { name: 'Tribo', tech: 'Kotlin Multiplatform & Django REST Framework', slug: 'tribo' },
+      { name: 'TriboFit', tech: 'Kotlin Multiplatform & Django REST Framework', slug: 'tribofit' },
       { name: 'DigiDex', tech: 'Android (Kotlin)', slug: 'digidex' },
       { name: 'Portfolio Website', tech: 'React & TypeScript', slug: 'portfolio-website' },
     ],
